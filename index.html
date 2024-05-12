@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Minimalistic ToDo-List</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="todo_favicon.png">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+<body>
+  <header>
+
+    
+
+    <section class="upper"> 
+      <h3 id="mes"></h3>
+      <h3 id="dia" style="margin-left:10px ;"></h3>
+    </section>
+
+    
+
+    <section class="lower"> 
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.87 31.87">
+          <path class="cls-1" d="M15.94,31.87,13,24.57A10.32,10.32,0,0,0,7.3,18.88L0,15.94,7.3,13A10.32,10.32,0,0,0,13,7.3L15.94,0l2.94,7.3A10.32,10.32,0,0,0,24.57,13l7.3,2.95-7.3,2.94a10.32,10.32,0,0,0-5.69,5.69Z" />
+        </svg>
+      </div>
+      <a href="https://github.com/gugasi">gugasi</a>
+    </section>
+  </header>
+
+
+  <div class="card"> 
+
+
+    <i id="cancel-edit-back" class="hidden mdi mdi-arrow-left"></i>
+    <h2 id="edit-title" class="hidden">
+      Task Editor
+    </h2>
+
+
+    <div id="main-input">
+      <h2>
+        To do List
+      </h2>
+      
+    <label class="input">
+      <input id="inputTarefa" class="input-field" type="text" placeholder=" " />
+      <span class="input-label">
+        Enter a Task
+      </span>
+    </label>
+  </div>
+      <!-- editor -->
+
+      <form id="editform" class="hidden">
+        <label class="input">
+          <input type="text" id="input-edit" class="input-field" type="text" placeholder=" ">
+        </label>
+        <button type="submit" id="editar">
+          Edit  
+        </button>
+      </form>
+
+      <!-- toolbar -->
+
+      <div id="toolbar">
+        <button onclick="addTarefa()" id="adicionar">
+          Add
+        </button>
+        <div id="search">
+          <h4>
+            Search:
+          </h4>
+            <form id="form-search">
+              <input oninput="search(id)" type="text" class="input-field" id="input-search" placeholder=" ">
+              <button id="erase-button">
+                <span class="mdi mdi-trash-can-outline"></span>
+              </button>
+            </form>
+          
+        </div>
+        <div id="filter">
+          <h4>Filter:</h4>
+          
+          <select id="filter-select" class="input-field">
+            <option value="all" selected>All</option>
+            <option value="done">Done</option>
+            <option value="current">Current</option>
+          </select>
+        </div>
+      </div>
+  </div>
+
+<!-- cool dude. -->
+
+  <div id="cooldude"> 
+    <img src="logocool.png" alt="Logo Cool">
+  </div>
+  
+
+<!-- area list JavaScript-->
+
+  <main id="areaLista">
+  
+  </main>
+
+
+
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
